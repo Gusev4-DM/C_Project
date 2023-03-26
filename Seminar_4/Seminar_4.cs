@@ -1,41 +1,41 @@
-﻿// // Input
+﻿// Input
 
-// int num = GetNumberFromUser("Введите целое число А: ", "Ошибка ввода!");
+int num = GetNumberFromUser("Введите целое число А: ", "Ошибка ввода!");
 
-// // Logic
+// Logic
 
-// int SumNumber = GetSumNumber(num);
+int SumNumber = GetSumNumber(num);
 
-// // Output
+// Output
 
-// Console.Write($"{num} -> {SumNumber}");
+Console.Write($"{num} -> {SumNumber}");
 
-// //////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// int GetSumNumber(int numbers)
-// {
-//     int sum = 0;
+int GetSumNumber(int numbers)
+{
+    int sum = 0;
 
-//     while(numbers > 0)
-//     {
-//         sum += numbers;
-//         numbers--;
-//     }
-//     return sum;
-// }
+    while(numbers > 0)
+    {
+        sum += numbers;
+        numbers--;
+    }
+    return sum;
+}
 
 
-// int GetNumberFromUser(string massage, string errorMassage)
-// {
-//     while(true)
-//     {
-//         Console.Write(massage);
-//         bool isCorrect = int.TryParse(Console.ReadLine(), out int UserNumber);
-//         if(isCorrect && UserNumber >= 0 )
-//             return UserNumber;
-//         Console.Write(errorMassage);
-//     }
-// }
+int GetNumberFromUser(string massage, string errorMassage)
+{
+    while(true)
+    {
+        Console.Write(massage);
+        bool isCorrect = int.TryParse(Console.ReadLine(), out int UserNumber);
+        if(isCorrect && UserNumber >= 0 )
+            return UserNumber;
+        Console.Write(errorMassage);
+    }
+}
 
 // Программа которая выдает колличество цифр в введенном числе
 
@@ -72,4 +72,3 @@ int GetNumberFromUser(string massage, string errorMassage)
         Console.Write(errorMassage);
     }
 }
-
